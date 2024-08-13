@@ -5,10 +5,8 @@ import java.util.Scanner; //This imports the console scanner that reads user inp
 //Your code here:
 public class Program3 {
     public static void main(String[] args){
-        int length = 143;
-        int width = 82;
-        int area = length * width;
-        int perimeter = 2 * length + 2 * width;
+        int length = 0;
+        int width = 0;
         
         Scanner numScanner = new Scanner(System.in);
         System.out.println("Enter the length: ");
@@ -16,6 +14,9 @@ public class Program3 {
         
         System.out.println("Enter the width: ");
         width = numScanner.nextInt();
+
+        int area = length * width;
+        int perimeter = 2 * length + 2 * width;
         
         System.out.println("The length is " +length);
         System.out.println("The width is " + width);
